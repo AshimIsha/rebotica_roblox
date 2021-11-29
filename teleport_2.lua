@@ -1,6 +1,6 @@
 --создаем переменную, которая хранит телепорт КУДА мы будем перелетать
 local teleport_1 = game.Workspace.teleport_1
---сщздаем функцию action, которая принимает объект в качестве аргумента  
+--создаем функцию action, которая принимает объект в качестве аргумента  
 local function action(touchPart)
 	--проверяем на необходимые условия: наличие объекта, модельки и логической переменной is_teleporting, которая должна равняться false
 	if touchPart and touchPart.Parent and touchPart.Parent.Humanoid and touchPart.Parent.is_teleporting.Value == false then
